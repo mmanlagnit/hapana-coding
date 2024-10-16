@@ -10,7 +10,7 @@ const locationResolvers = {
 
             return paginatedQuery;
         },
-        location: async (_, { id }) => {
+        async location(_, { id }) {
             return await Location.findById(id);
         }
     },
